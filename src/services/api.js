@@ -15,7 +15,7 @@ async function detectApiBaseUrl() {
     } catch (_) {}
   }
   // Fallback to default
-  API_BASE_URL = 'http://localhost:5000/api';
+  API_BASE_URL = 'https://taskmanager-d48w.onrender.com/api';
   localStorage.setItem('apiBaseUrl', API_BASE_URL);
   return API_BASE_URL;
 }
@@ -53,7 +53,7 @@ class ApiService {
 
   // Initialize base URL by detecting backend if needed
   async init() {
-    if (!this.baseURL || this.baseURL.includes('localhost:5000') && !(import.meta.env.VITE_API_URL)) {
+    if (!this.baseURL || this.baseURL.includes('https://taskmanager-d48w.onrender.com') && !(import.meta.env.VITE_API_URL)) {
       this.baseURL = await detectApiBaseUrl();
     }
   }
