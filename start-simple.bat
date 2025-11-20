@@ -13,7 +13,7 @@ start "Frontend" cmd /k "npm run dev"
 
 echo.
 echo Both servers are starting!
-echo Backend: http://localhost:5000
+echo Backend: https://taskmanager-d48w.onrender.com
 echo Frontend: Check the terminal for the port (usually 5173-5177)
 echo.
 echo Login with:

@@ -30,7 +30,7 @@ Start-Process powershell -ArgumentList "-NoExit", "-Command", "npm run dev" -Win
 
 Write-Host ""
 Write-Host "Both servers are starting..." -ForegroundColor Green
-Write-Host "Backend: http://localhost:5000" -ForegroundColor Cyan
+Write-Host "Backend: https://taskmanager-d48w.onrender.com" -ForegroundColor Cyan
 Write-Host "Frontend: http://localhost:5177" -ForegroundColor Cyan
 Write-Host ""
 Write-Host "Press any key to exit..." -ForegroundColor Gray
