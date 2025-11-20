@@ -53,7 +53,7 @@ class ApiService {
 
   // Initialize base URL by detecting backend if needed
   async init() {
-    if (!this.baseURL || this.baseURL.includes('https://taskmanager-d48w.onrender.com') && !(import.meta.env.VITE_API_URL)) {
+    if (!this.baseURL || this.baseURL.includes('https://taskmanager-d48w.onrender.com/api') && !(import.meta.env.VITE_API_URL)) {
       this.baseURL = await detectApiBaseUrl();
     }
   }
